@@ -1,5 +1,6 @@
 
-
+//INPUT: evt: event object, tabIndex: tab index
+// DESCRIPTION: move in bewteen tabs
 function openTabIndex(evt, tabIndex)
 {
     // Declare all variables
