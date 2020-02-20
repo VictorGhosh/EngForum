@@ -16,6 +16,7 @@
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s;
+    font-size: 17px;
 }
 
     /*Locate the buttons*/
@@ -35,3 +36,43 @@
 {
     background-color: #ccc;
 }
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+/* The following is the search bar code under tab Search*/ 
+form.example input[type=text] {
+  box-sizing: border-box;
+   padding: 10px;
+   font-size: 17px;
+   border: 1px solid grey;
+   float: left;
+   width: 80%;
+   background: #f1f1f1;
+ }
+ 
+ form.example button {
+   box-sizing: border-box;
+   float: left;
+   width: 20%;
+   padding: 10px;
+   background: #2196F3;
+   color: white;
+   font-size: 17px;
+   border: 1px solid grey;
+   border-left: none;
+   cursor: pointer;
+ }
+ 
+ form.example button:hover {
+   background: #0b7dda;
+ }
+ 
+ form.example::after {
+  
+ }

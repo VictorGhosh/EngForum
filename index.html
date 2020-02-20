@@ -15,11 +15,20 @@
 <!--This is the tab links-->
 <div class="tab">
     <button class="tablinks" id="tabIndexBTN1" onclick="openTabIndex(event, 'Profile')" id=defaultOpen>Profile</button>
-    <button class="tablinks" id="tabIndexBTN2" onclick="openTabIndex(event, 'Feed')">Feed</button>
+    <button class="tablinks" id="tabIndexBTN2" onclick="openTabIndex(event, 'Subscriptions')">Subscriptions</button>
+    <button class="tablinks" id="tabIndexBTN3" onclick="openTabIndex(event, 'search')">Search</button>
+    <button class="tablinks" id="tabIndexBTN2" onclick="openTabIndex(event, 'AboutMe')">AboutMe</button>
 </div>
 <hr>
 
-
+<!--Tab Content-->
+<!--Search Bar-->>
+<div id ='search' class='tabcontent'>
+    <form class="example" action="/action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+</div>>
     <script 
     src="index.js">
     </script>

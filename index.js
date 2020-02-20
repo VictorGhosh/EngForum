@@ -4,8 +4,14 @@
 function openTabIndex(evt, tabIndex)
 {
     // Declare all variables
-    var i, tablinks;
-   
+    var i, tabcontent, tablinks;
+
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++)
+    {
+      tabcontent[i].style.display = "none";
+    }
+    
     // Get all elements with class="tablinks" and remove the class "active"
     tablinks = document.getElementsByClassName("tablinks");
     for (i = 0; i < tablinks.length; i++) {
