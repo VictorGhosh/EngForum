@@ -15,13 +15,10 @@
     }
 
     //Data to input
-    $user_id = mt_rand(0,99999);
     $username = mysqli_real_escape_string($conn, $_POST["uname"]);
     $password = mysqli_real_escape_string($conn, $_POST["upass"]);
-    $creation_date = mysqli_real_escape_string($conn, date("y/m/d"));
 
-    $sqli = "INSERT INTO clientLogin VALUES ('$user_id', '$username',
-        '$password', '$creation_date')";
+    $sqli = "INSERT INTO clientLogin VALUES ('$username', '$password')";
 
     mysqli_select_db($conn, $db);
     $retval = mysqli_real_query($conn, $sqli);
