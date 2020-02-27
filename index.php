@@ -26,9 +26,11 @@
 
 <!--Create User-->
 <div id='createUser' class='tabcontent'>
-    <input type="text" placeholder="Username" name="uname">
-    <input type="text" placeholder="Password" name="upass">
-    <button type="button" onclick="openTabIndex(event, 'giveUserInfo')">Submit</button>
+    <form action="giveUser.php" method="post">
+        <input type="text" placeholder="Username" name="uname">
+        <input type="text" placeholder="Password" name="upass">
+        <input type="submit">
+    </form>
 </div>
 
 
