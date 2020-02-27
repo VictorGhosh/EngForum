@@ -14,11 +14,12 @@
 
 <!--This is the tab links-->
 <div class="tab">
-    <button class="tablinks" id="tabIndexBTN1" onclick="openTabIndex(event, 'Profile')" id=defaultOpen>Profile</button>
-    <button class="tablinks" id="tabIndexBTN2" onclick="openTabIndex(event, 'Subscriptions')">Subscriptions</button>
+    <button class="tablinks" id="tabIndexBTN1" onclick="openTabIndex(event, 'profile')" id=defaultOpen>Profile</button>
+    <button class="tablinks" id="tabIndexBTN2" onclick="openTabIndex(event, 'subscriptions')">Subscriptions</button>
     <button class="tablinks" id="tabIndexBTN3" onclick="openTabIndex(event, 'search')">Search</button>
-    <button class="tablinks" id="tabIndexBTN4" onclick="openTabIndex(event, 'AboutMe')">AboutMe</button>
-    <button class="tablinks" id="tabIndexBTN5" onclick="openTabIndex(event, 'createUser')">Create User</button>
+    <button class="tablinks" id="tabIndexBTN4" onclick="openTabIndex(event, 'aboutMe')">AboutMe</button>
+    <button class="tablinks" id="tabIndexBTN5" onclick="openTabIndex(event, 'loginUser')">Login</button>
+    <button class="tablinks" id="tabIndexBTN6" onclick="openTabIndex(event, 'createUser')">Create Account</button>
 </div>
 <hr>
 
@@ -33,6 +34,14 @@
     </form>
 </div>
 
+<!-- Login -->
+<div id='loginUser' class='tabcontent'>
+    <form action="getUser.php" method="post">
+        <input type="text" placeholder="Username" name="loginUName">
+        <input type="text" placeholder="Password" name="loginUPass">
+        <input type="submit">
+    </form>
+</div>
 
 <!--Search Bar-->
 <div id ='search' class='tabcontent'>
