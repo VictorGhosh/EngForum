@@ -38,7 +38,6 @@
         //Check if username matches input
         if ($row["uname"] === $username) {
             $currentUser = $row["uname"];
-
             //Check if password matches input
             if ($row["upass"] === $password) {
                 //User accepted

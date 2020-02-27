@@ -19,7 +19,6 @@
     $password = mysqli_real_escape_string($conn, $_POST["upass"]);
 
     $sqli = "INSERT INTO clientLogin VALUES ('$username', '$password')";
-
     mysqli_select_db($conn, $db);
     $retval = mysqli_real_query($conn, $sqli);
       
