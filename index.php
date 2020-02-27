@@ -31,18 +31,6 @@
     <button type="button" onclick="openTabIndex(event, 'giveUserInfo')">Submit</button>
 </div>
 
-<div id='giveUserInfo'>
-    <?php
-        $uNameFile = fopen("clientUName.txt", "w") or die("Unable to open clientUName.txt");
-        $uPassFile = fopen("clientUPass.txt", "w") or die("Unable to open clientUPass.txt");
-        $uName = "Username\n";
-        $uPass = "Password\n";
-        fwrite($uNameFile, $uName);
-        fwrite($uPassFile, $uPass);
-        fclose($uNameFile);
-        fclose($uPassFile);
-    ?> 
-</div>
 
 <!--Search Bar-->
 <div id ='search' class='tabcontent'>
