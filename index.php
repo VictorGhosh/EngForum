@@ -14,14 +14,11 @@
 
 <!--This is the tab links-->
 <div class="tab">
-    <button class="tablinks" id="tabIndexBTN1" onclick="openTabIndex(event, 'profile')" id=defaultOpen>Profile</button>
+    <button class="tablinks" id="tabIndexBTN1" onclick="openTabIndex(event, 'Profile')" id=defaultOpen>Profile</button>
     <button class="tablinks" id="tabIndexBTN2" onclick="openTabIndex(event, 'Subscriptions')">Subscriptions</button>
     <button class="tablinks" id="tabIndexBTN3" onclick="openTabIndex(event, 'search')">Search</button>
     <button class="tablinks" id="tabIndexBTN4" onclick="openTabIndex(event, 'AboutMe')">AboutMe</button>
-<<<<<<< HEAD:index.html
-=======
     <button class="tablinks" id="tabIndexBTN5" onclick="openTabIndex(event, 'createUser')">Create User</button>
->>>>>>> 15eb838219b9af5dbba22114032d342fd5f6f861:index.php
 </div>
 <hr>
 
@@ -44,25 +41,8 @@
         <button type="submit">Submit<i class="fa fa-search"></i></button>
     </form>
 </div>>
-
-<!--Code profile,,, Procedure is explained below-->>
-<div id='profile' class='tabcontent'>
-    <div id ='thumbnail-viewer'></div>
-    <div id='thumbnails'>
-
-        <a href ="QuestionDisplay" class='thumb active' title='DisplayNotWorking'> <!--Show question-->>
-            <button id='thumbnailNum1'>sQuestion</button> </a>
-        <a> href='ImageToDisplay' title='DisplayNotWorking' <!--Show image related to question-->>
-            <button id ='thumbnailNum2'>Image</button> </a> 
-        <a href ='AnswerDisplay'  title='DisplayNotWorking'> <!--Show answer to question-->>
-            <button id='thumbnailNum3'>Answer</button> </a>
-    </div>
-</div>
-
     <script 
     src="index.js">
     </script>
 </body>
 </html>
-<!--Goal of profile is to save input, display input on a photo viewer control panel,
- The control panel has 3 tabs, one for question it self, the other for image and third for response-->>
