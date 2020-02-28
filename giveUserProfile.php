@@ -15,8 +15,12 @@
     }
 
     //Data to input
-    $username = mysqli_real_escape_string($conn, $_POST["uname"]);
-    $password = mysqli_real_escape_string($conn, $_POST["upass"]);
+    $username = mysqli_real_escape_string($conn, $_POST["loginUName"]);
+    $password = mysqli_real_escape_string($conn, $_POST["loginUPass"]);
+    $year = mysqli_real_escape_string($conn, $_POST["year"]);
+    $status = mysqli_real_escape_string($conn, $_POST["status"]);
+    $program = mysqli_real_escape_string($conn, $_POST["program"]);
+    $bio = mysqli_real_escape_string($conn, $_POST["bio"]);
 
     $sqli = "INSERT INTO clientLogin VALUES ('$username', '$password')";
     mysqli_select_db($conn, $db);
