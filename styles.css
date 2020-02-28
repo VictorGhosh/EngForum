@@ -73,6 +73,7 @@ form.example input[type=text] {
    background: #0b7dda;
  }
  
+ /*What to do after search bar is submitted*/
  form.example::after {
   
  }
