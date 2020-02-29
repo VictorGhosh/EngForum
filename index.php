@@ -27,6 +27,17 @@
 
 <!--Create User-->
 <div id='createUser' class='tabcontent'>
+    <?php
+        include giveUser.php;
+        if( isset($_POST['submit']) )
+        {
+            //TODO: Fix this. s
+            $val1 = htmlentities($_POST['uname']);
+            $val2 = htmlentities($_POST['upass']);
+
+            $result = myFunction($val1, $val2);
+        }
+    ?>
     <form action="giveUser.php" method="post">
         <input type="text" placeholder="Username" name="uname">
         <input type="text" placeholder="Password" name="upass">
