@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Homepage | QUASF</title>
 
     <!--Link the css code-->
     <link rel = "stylesheet" href= "styles.css">
 
 </head>
 <body>
+    
+<h1 style="color:#990000;text-align:left;font-size:60px"><strong> Welcome to Queens Applied Science Forum!</h1>
 
 <!--This is the tab links-->
 <div class="tab">
     <button class="tablinks" id="tabIndexBTN1" onclick="openTabIndex(event, 'Profile')" id=defaultOpen>Profile</button>
     <button class="tablinks" id="tabIndexBTN2" onclick="openTabIndex(event, 'Subscriptions')">Subscriptions</button>
     <button class="tablinks" id="tabIndexBTN3" onclick="openTabIndex(event, 'search')">Search</button>
-    <button class="tablinks" id="tabIndexBTN4" onclick="openTabIndex(event, 'AboutMe')">About Me</button> <!--Added space-->
+    <button class="tablinks" id="tabIndexBTN4" onclick="openTabIndex(event, 'AboutMe')">About Me</button> 
     <button class="tablinks" id="tabIndexBTN5" onclick="openTabIndex(event, 'createUser')">Create User</button>
 </div>
 <hr>
