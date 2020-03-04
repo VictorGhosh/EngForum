@@ -7,7 +7,7 @@
     <title>Document</title>
 
     <!--Link the css code-->
-    <link rel = "stylesheet" href= "styles.css"> 
+    <link rel = "stylesheet" href= "styles.css">
 
 </head>
 <body>
@@ -17,7 +17,7 @@
     <button class="tablinks" id="tabIndexBTN1" onclick="openTabIndex(event, 'Profile')" id=defaultOpen>Profile</button>
     <button class="tablinks" id="tabIndexBTN2" onclick="openTabIndex(event, 'Subscriptions')">Subscriptions</button>
     <button class="tablinks" id="tabIndexBTN3" onclick="openTabIndex(event, 'search')">Search</button>
-    <button class="tablinks" id="tabIndexBTN4" onclick="openTabIndex(event, 'AboutMe')">AboutMe</button>
+    <button class="tablinks" id="tabIndexBTN4" onclick="openTabIndex(event, 'AboutMe')">About Me</button> <!--Added space-->
     <button class="tablinks" id="tabIndexBTN5" onclick="openTabIndex(event, 'createUser')">Create User</button>
 </div>
 <hr>
@@ -41,7 +41,7 @@
         <button type="submit">Submit<i class="fa fa-search"></i></button>
     </form>
 </div>>
-    <script 
+    <script
     src="index.js">
     </script>
 </body>
