@@ -9,7 +9,7 @@
     $db = 'CLIENTUSERDATA';
 
     //Connect to SQL ($link)
-    $conn = mysqli_connect($dbhost, $dbuser, $dbpass);
+    $conn = mysqli_connect($dbhost, $dbuser, $dbpass); //retrieve user data in sqli
     if(! $conn ) {
         die('Could not connect: ' . mysqli_error($conn));
     }
@@ -20,7 +20,8 @@
     $password = mysqli_real_escape_string($conn, $_POST["upass"]);
     $creation_date = mysqli_real_escape_string($conn, date("y/m/d"));
 
-    $sqli = "INSERT INTO clientLogin VALUES ('$user_id', '$username',
+    //Create Table of entry
+    $sqli = "INSERT INTO clientLogin VALUES ('$user_id', '$username', 
         '$password', '$creation_date')";
 
     mysqli_select_db($conn, $db);
@@ -35,3 +36,23 @@
 ?>
 
 <!-- DO NOT EVER LINK TO THIS PAGE -->
+<!--I'll create a separate table to contain home tab questions-->
+
+
+<?php
+
+//The table headings
+//$dbHost = 'localhost';
+//$wordQuestion = 'Question';
+//$wordImg = 'Image';
+//$solutions = 'solutions';
+//$questionNum = 'questionNum';
+
+//Connect to SQL ($link)
+//$conn = mysqli_connect($dbhost, $dbuser, $dbpass); //retrieve user data in sqli
+//if(! $conn ) {
+//    die('Could not connect: ' . mysqli_error($conn));
+//}
+
+
+?>
