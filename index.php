@@ -27,9 +27,9 @@
 </div>
 <hr>
 
-<!--Tab Content-->
+<!--Tab Content Start below-->
 
-<!--Create User-->
+<!--Form submission of the user's data-->
 <div id='createUser' class='tabcontent'>
     <form action="giveUser.php" method="post">
         <input type="text" placeholder="Username" name="uname">
@@ -53,9 +53,15 @@
         <input type="text" placeholder="Search.." name="search">
         <button type="submit">Submit<i class="fa fa-search"></i></button>
     </form>
-</div>>
-    <script
-    src="index.js">
+</div>
+
+<!--This is for the Home tab-->
+<div id='home'>
+    <!--Retrieve input from the user--> <!--Create a table cotaining questions-->
+    <!--Display input in the tabs-->
+</div>
+
+    <script src="index.js">
     </script>
 </body>
 </html>
