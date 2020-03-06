@@ -39,20 +39,4 @@
 <!--I'll create a separate table to contain home tab questions-->
 
 
-<?php
 
-//The table headings
-//$dbHost = 'localhost';
-//$wordQuestion = 'Question';
-//$wordImg = 'Image';
-//$solutions = 'solutions';
-//$questionNum = 'questionNum';
-
-//Connect to SQL ($link)
-//$conn = mysqli_connect($dbhost, $dbuser, $dbpass); //retrieve user data in sqli
-//if(! $conn ) {
-//    die('Could not connect: ' . mysqli_error($conn));
-//}
-
-
-?>
