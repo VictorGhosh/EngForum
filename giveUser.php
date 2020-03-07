@@ -9,8 +9,6 @@
     $db = 'CLIENTUSERDATA';
 
     //Connect to SQL ($link)
-    $conn = mysqli_connect($dbhost, $dbuser, $dbpass); //retrieve user data in sqli
-    if(! $conn ) {
     $conn = mysqli_connect($dbhost, $dbuser, $dbpass);
     if (! $conn ) {
         die('Could not connect: ' . mysqli_error($conn));
@@ -41,6 +39,3 @@
 
 <!-- DO NOT EVER LINK TO THIS PAGE -->
 <!--I'll create a separate table to contain home tab questions-->
-
-
-
