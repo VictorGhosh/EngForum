@@ -9,6 +9,8 @@ if(! $conn ) {
 }
 
 //Connect to data base
+
 mysqli_select_db($conn,DATABASE_NAME)
 or die("<p>Error selecting the database" . DATABASE_NAME . mysqli_error($conn) . "</p>");
+
 ?>
