@@ -1,0 +1,25 @@
+PHP Code
+    - index.php: htmlentities is not a secure way to clean variables
+    -
+    -
+
+SQL Code
+    - CLIENTUSERDATA: create table for user profiles
+    - clientLogin: figure auto incrementing system for user IDs
+    - FORUMDATA: make me
+    - FORUMDATA: make table for forum posts with other inputs
+
+HTML Code
+    - userLogin: make me
+    - userCreation: make me
+    -
+
+CSS Code
+    - style regular body text
+    -
+    -
+
+Site Design
+    -
+    -
+    -
