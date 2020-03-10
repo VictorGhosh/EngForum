@@ -9,10 +9,14 @@
     <!--Link the css code-->
     <link rel = "stylesheet" href= "styles.css">
 
+    <!-- jQuery CDN (@Microsoft) -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+
 </head>
 <body>
-    
-<h1 style="color:#990000;text-align:left;font-size:60px"><strong> Welcome to Queens Applied Science Forum!</h1>
+
+<!-- The line below brakes the site -->
+<!-- <h1 style="color:#990000;text-align:left;font-size:60px"><strong> Welcome to Queens Applied Science Forum!</h1> -->
 
 <!--This is the tab links-->
 <div class="tab">
@@ -32,13 +36,14 @@
 <!--Form submission of the user's data-->
 <div id='createUser' class='tabcontent'>
     <?php
-        include 'giveUser.php';
-        if( isset($_POST['submit']) )
-        {
-            //TODO: Fix this. s
-            $val1 = htmlentities($_POST['uname']);
-            $val2 = htmlentities($_POST['upass']);
-        }
+        // include 'giveUser.php';
+        //     if ( ! giveUser.php)
+        // if( isset($_POST['submit']) )
+        // {
+        //     //TODO: Fix this
+        //     $val1 = htmlentities($_POST['uname']);
+        //     $val2 = htmlentities($_POST['upass']);
+        // }
     ?>
     <form action="giveUser.php" method="post">
         <input type="text" placeholder="Username" name="uname">
@@ -49,11 +54,29 @@
 
 <!-- Login -->
 <div id='loginUser' class='tabcontent'>
-    <form action="getUser.php" method="post">
+    
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                alert("IT WORKED!");
+                <p>The par thing worked fuck me</p>
+                //     var iUsername = $(document.getElementsByName("loginUName")).text;
+                //     <p><?php echo $iUsername ?>.</p>
+
+                //     $.ajax({
+                //         type: "POST",
+                //         url: "getUser.php",
+                //         data: { iUser: iUsername }
+                // }).done(function( msg ) {
+                //     alert( "Input sent to login checker: " + msg );
+                // });
+            });
+        });
+    </script>
+
         <input type="text" placeholder="Username" name="loginUName">
         <input type="text" placeholder="Password" name="loginUPass">
-        <input type="submit">
-    </form>
+        <button>Submit</button>
 </div>
 
 <!--Search Bar-->
@@ -72,5 +95,6 @@
 
     <script src="index.js">
     </script>
+
 </body>
 </html>
