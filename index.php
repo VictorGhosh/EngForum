@@ -11,8 +11,9 @@
 
 </head>
 <body>
-    
-<h1 style="color:#990000;text-align:left;font-size:60px"><strong> Welcome to Queens Applied Science Forum!</h1>
+
+<!-- The line below brakes the site -->
+<!-- <h1 style="color:#990000;text-align:left;font-size:60px"><strong> Welcome to Queens Applied Science Forum!</h1> -->
 
 <!--This is the tab links-->
 <div class="tab">
