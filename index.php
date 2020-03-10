@@ -54,24 +54,29 @@
 
 <!-- Login -->
 <div id='loginUser' class='tabcontent'>
-
-        <input type="text" placeholder="Username" name="loginUName">
-        <input type="text" placeholder="Password" name="loginUPass">
-        <input type="submit">
+    
     <script>
-        $('.button').click(function() {
-            var iUsername = $("loginUName").val(text);
-            var iUsername = $("loginUPass").val(text);
-            $.ajax({
-                type: "POST",
-                url: "getUser.php",
-                data: { iUser: "John" }
-        }).done(function( msg ) {
-            alert( "Input sent to login checker: " + msg );
+        $(document).ready(function() {
+            $("button").click(function() {
+                alert("IT WORKED!");
+                <p>The par thing worked fuck me</p>
+                //     var iUsername = $(document.getElementsByName("loginUName")).text;
+                //     <p><?php echo $iUsername ?>.</p>
+
+                //     $.ajax({
+                //         type: "POST",
+                //         url: "getUser.php",
+                //         data: { iUser: iUsername }
+                // }).done(function( msg ) {
+                //     alert( "Input sent to login checker: " + msg );
+                // });
             });
         });
     </script>
 
+        <input type="text" placeholder="Username" name="loginUName">
+        <input type="text" placeholder="Password" name="loginUPass">
+        <button>Submit</button>
 </div>
 
 <!--Search Bar-->
