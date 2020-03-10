@@ -9,6 +9,9 @@
     <!--Link the css code-->
     <link rel = "stylesheet" href= "styles.css">
 
+    <!-- jQuery CDN (@Microsoft) -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+
 </head>
 <body>
 
@@ -34,6 +37,7 @@
 <div id='createUser' class='tabcontent'>
     <?php
         // include 'giveUser.php';
+        //     if ( ! giveUser.php)
         // if( isset($_POST['submit']) )
         // {
         //     //TODO: Fix this
@@ -50,11 +54,24 @@
 
 <!-- Login -->
 <div id='loginUser' class='tabcontent'>
-    <form action="getUser.php" method="post">
+
         <input type="text" placeholder="Username" name="loginUName">
         <input type="text" placeholder="Password" name="loginUPass">
         <input type="submit">
-    </form>
+    <script>
+        $('.button').click(function() {
+            var iUsername = $("loginUName").val(text);
+            var iUsername = $("loginUPass").val(text);
+            $.ajax({
+                type: "POST",
+                url: "getUser.php",
+                data: { iUser: "John" }
+        }).done(function( msg ) {
+            alert( "Input sent to login checker: " + msg );
+            });
+        });
+    </script>
+
 </div>
 
 <!--Search Bar-->
@@ -73,5 +90,6 @@
 
     <script src="index.js">
     </script>
+
 </body>
 </html>
