@@ -1,10 +1,6 @@
 
 <!-- DO NOT EVER LINK TO THIS PAGE -->
 
-<!DOCTYPE html>
-<html lang="en">
-<body>
-
 <?php
     function userPassCheck($iUser,$iPass) {
 
@@ -66,8 +62,5 @@
         echo "Welcome back " . $user . "\n";
     }
 ?>
-
-</body>
-</html>
 
 <!-- DO NOT EVER LINK TO THIS PAGE -->
