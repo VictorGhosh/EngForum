@@ -19,9 +19,9 @@ function openTabIndex(evt, tabIndex)
     }
   
     // Show the current tab, and add an "active" class to the button that opened the tab
-    document.getElementById(tabIndex).style.display = "block";
+    $('#tabIndex').CSS("block");
     evt.currentTarget.className += " active";
 }
 
 //Open dafault tab index
-$("#defaultOpen").click()
+$("#defaultOpen").click();
