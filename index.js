@@ -24,4 +24,4 @@ function openTabIndex(evt, tabIndex)
 }
 
 //Open dafault tab index
-$("#defaultOpen").click()
+document.getElementById("defaultOpen").click();
