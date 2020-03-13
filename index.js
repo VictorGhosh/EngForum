@@ -24,8 +24,4 @@ function openTabIndex(evt, tabIndex)
 }
 
 //Open dafault tab index
-<<<<<<< HEAD
 $("#defaultOpen").click();
-=======
-document.getElementById("defaultOpen").click();
->>>>>>> parent of 8f5cb94... Finaly got jQuery

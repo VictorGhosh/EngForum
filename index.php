@@ -9,18 +9,13 @@
     <!--Link the css code-->
     <link rel = "stylesheet" href= "styles.css">
 
-    <!-- jQuery CDN (@Microsoft) -->
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
-
+    <!-- jQuery -->
+        <script src="jquery-3.4.1.min.js"></script>
+        <script src="index.js"></script>
 </head>
 <body>
 
-<<<<<<< HEAD
 <h1 style="color:#990000;text-align:left;font-size:60px"><strong> Welcome to Queen's Applied Science Forum!</strong></h1>
-=======
-<!-- The line below brakes the site -->
-<!-- <h1 style="color:#990000;text-align:left;font-size:60px"><strong> Welcome to Queens Applied Science Forum!</h1> -->
->>>>>>> parent of 8f5cb94... Finaly got jQuery
 
 <!--This is the tab links-->
 <div class="tab">
@@ -60,7 +55,6 @@
     
     <script>
         $(document).ready(function() {
-<<<<<<< HEAD
             $(bSubmitLogin).click(function() {
             /* When "bSubmitLogin button" is clicked */
 
@@ -77,33 +71,18 @@
                 //     success: function(result){
                 //          alert('success');
                 //     }
-=======
-            $("button").click(function() {
-                alert("IT WORKED!");
-                <p>The par thing worked fuck me</p>
-                //     var iUsername = $(document.getElementsByName("loginUName")).text;
-                //     <p><?php echo $iUsername ?>.</p>
-
-                //     $.ajax({
-                //         type: "POST",
-                //         url: "getUser.php",
-                //         data: { iUser: iUsername }
-                // }).done(function( msg ) {
-                //     alert( "Input sent to login checker: " + msg );
->>>>>>> parent of 8f5cb94... Finaly got jQuery
                 // });
             });
         });
     </script>
-
-        <input type="text" placeholder="Username" name="loginUName">
-        <input type="text" placeholder="Password" name="loginUPass">
-        <button>Submit</button>
+        <input type="text" placeholder="Username" name="loginUName" id="loginUNameID">
+        <input type="text" placeholder="Password" name="loginUPass" id="loginUPassID">
+        <button id="bSubmitLogin">Submit</button>
 </div>
 
 <!--Search Bar-->
 <div id ='search' class='tabcontent'>
-    <form action="getPosts.php" method="post">
+    <form class="example" action="/action_page.php">
         <input type="text" placeholder="Search.." name="search">
         <button type="submit">Submit<i class="fa fa-search"></i></button>
     </form>
