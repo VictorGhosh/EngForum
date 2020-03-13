@@ -34,20 +34,20 @@
 
 <!--Form submission of the user's data-->
 <div id='createUser' class='tabcontent'>
-
+<!-- 
     <script>
         $(document).ready(function() {
             $(bSubmitCreate).click(function() {
                 // $_SESSION["iUName"] = document.getElementById("createUName").value;
                 // $_SESSION["iUPass"] = document.getElementById("createUPass").value;
             
-                <?php giveUser($_POST["iUName"],$_POST["iUPass"]); ?>
+                // giveUser($_POST["iUName"],$_POST["iUPass"]);
             });
         });
     </script>
         <input type="text" placeholder="Username" id="createUName">
         <input type="text" placeholder="Password" id="createUPass">
-        <button id="bSubmitCreate">Submit</button>
+        <button id="bSubmitCreate">Submit</button> -->
 </div>
 
 <!-- Login -->
