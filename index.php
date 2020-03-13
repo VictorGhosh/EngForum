@@ -16,12 +16,7 @@
 <body>
 
 <<<<<<< HEAD
-<<<<<<< HEAD
 <h1 style="color:#990000;text-align:left;font-size:60px"><strong> Welcome to Queen's Applied Science Forum!</strong></h1>
-=======
-<!-- The line below brakes the site -->
-<!-- <h1 style="color:#990000;text-align:left;font-size:60px"><strong> Welcome to Queens Applied Science Forum!</h1> -->
->>>>>>> parent of 8f5cb94... Finaly got jQuery
 =======
 <!-- The line below brakes the site -->
 <!-- <h1 style="color:#990000;text-align:left;font-size:60px"><strong> Welcome to Queens Applied Science Forum!</h1> -->
@@ -66,7 +61,6 @@
     <script>
         $(document).ready(function() {
 <<<<<<< HEAD
-<<<<<<< HEAD
             $(bSubmitLogin).click(function() {
             /* When "bSubmitLogin button" is clicked */
 
@@ -84,8 +78,6 @@
                 //          alert('success');
                 //     }
 =======
-=======
->>>>>>> parent of 8f5cb94... Finaly got jQuery
             $("button").click(function() {
                 alert("IT WORKED!");
                 <p>The par thing worked fuck me</p>
